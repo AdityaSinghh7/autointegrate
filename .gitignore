@@ -1,0 +1,11 @@
+node_modules/
+.env
+*.tar
+
+# NOTE: ./memory is intentionally TRACKED. It is the agent's persistence layer,
+# and the learned files + corrections are a deliverable (they prove the
+# "stays fixed" guarantee). Do NOT add memory/ here.
+
+# Run traces can be large; keep the directory but ignore the JSONL by default.
+# Commit a specific headline trace with `git add -f` when needed.
+runs/*.jsonl

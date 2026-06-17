@@ -1,0 +1,24 @@
+{
+  "name": "autointegrate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "chat": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "nohardcode": "! grep -rIEi 'acme|globex|8787|orientation|hired|rejected|cdl|hazmat|APP-|/t/|driver_name' src memory/INDEX.md"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.3.179",
+    "yaml": "^2.9.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
